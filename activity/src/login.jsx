@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import { useNavigate, Link } from "react-router-dom";
-import "././Login.css"; 
+import "./styles/login.css"; 
 
 
 function Login() {
@@ -13,7 +13,7 @@ function Login() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost/react-auth/login.php",
+        "http://localhost/activity/login.php",
         { email, password },
         { headers: { "Content-Type": "application/json" } }
       );

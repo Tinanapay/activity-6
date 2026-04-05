@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Landing from "./Landing";
 import Register from "./Register";
-import Login from "./Login";
-import Home from "./Home";
+import Login from "./login";
+import Home from "./home";
 
 function ProtectedRoute({ children }) {
   const isAuth = localStorage.getItem("user");
