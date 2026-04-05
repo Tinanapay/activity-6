@@ -1,0 +1,40 @@
+body {
+  background-color: #9fbb7f;
+  padding: 10px;
+  color: rgb(228, 10, 206);
+  min-height: 100vh;
+  margin: 0;
+}
+
+.login-container,
+.Register-container {
+  width: 300px;
+  margin: 100px auto;
+  text-align: center;
+  color: #f200ff;
+}
+
+input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 8px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  color: #000;
+  background-color: #f200ff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #d100d6;
+}

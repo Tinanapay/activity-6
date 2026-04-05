@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.home-container {
+  min-height: 100vh;
+  background-color: #9fbb7f;
+  color: rgb(228, 10, 206);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  width: 250px;
+  backdrop-filter: blur(5px);
+}
+
+button {
+  width: 200px;
+  padding: 10px;
+  background-color: #f200ff;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #d100d6;
+}

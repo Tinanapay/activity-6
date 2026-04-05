@@ -1,0 +1,100 @@
+:root {
+  --text: #6b6375;
+  --text-h: #08060d;
+  --bg: #fff;
+  --border: #e5e4e7;
+  --code-bg: #f4f3ec;
+  --accent: #f200ff;
+  --accent-bg: rgba(242, 0, 255, 0.1);
+  --accent-border: rgba(242, 0, 255, 0.5);
+  --shadow: rgba(0, 0, 0, 0.1) 0 10px 15px -3px;
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+}
+
+body {
+  margin: 0;
+  padding: 10px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #9fbb7f, #f5d0fe);
+  color: var(--text-h);
+  font-family: var(--sans);
+}
+
+/* ROOT CONTAINER */
+#root {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADINGS */
+h1, h2 {
+  font-family: var(--heading);
+  color: var(--text-h);
+}
+
+h1 {
+  font-size: 48px;
+  margin: 30px 0;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+/* CONTAINERS */
+.login-container,
+.Register-container {
+  width: 320px;
+  margin: 100px auto;
+  padding: 20px;
+  border-radius: 12px;
+  background: white;
+  box-shadow: var(--shadow);
+  color: var(--accent);
+  position: relative;
+}
+
+/* INPUTS */
+input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  outline: none;
+}
+
+/* BUTTONS */
+button {
+  width: 100%;
+  padding: 10px;
+  background: var(--accent);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #d100d6;
+  transform: scale(1.02);
+}
+
+/* CODE STYLE */
+code {
+  font-family: var(--mono);
+  background: var(--code-bg);
+  padding: 4px 6px;
+  border-radius: 4px;
+}
